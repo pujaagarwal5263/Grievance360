@@ -10,7 +10,7 @@ const Grievance=()=>{
 
     const userContact=async()=>{
        try{
-         const res = await fetch("/getdata",{
+         const res = await fetch("https://grievance360.onrender.com/getdata",{
             method: "GET",
             headers:{
                 "Content-Type": "application/json"

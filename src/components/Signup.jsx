@@ -23,7 +23,7 @@ const Signup=()=>{
     event.preventDefault();
     const {name, email, password,cpassword, phone, address}=user;
 
-    const res= await fetch("/register",{
+    const res= await fetch("https://grievance360.onrender.com/register",{
       //these key-value pair are similar to data or elements shown on postman while posting the data
       "method":"POST",
       headers:{

@@ -7,9 +7,6 @@ const GrievanceStatus=()=>{
     const [Array,setArray] =useState([{date:"",dept:"",email:"",feedback:"",grievance:"",name:"",phone:"",status:"",_id:""}]);
 
     let Cat="Education";
-    /*const handleInputs=(event)=>{
-      setCat(event.target.value);
-    }*/
 
     const getData=async()=>{
         try{

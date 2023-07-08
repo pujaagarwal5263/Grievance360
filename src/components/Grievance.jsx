@@ -46,7 +46,7 @@ const Grievance=()=>{
        event.preventDefault();
 
        const {name,email,phone,dept,grievance}=userData;
-       const res=await fetch("/grievance",{
+       const res=await fetch("https://grievance360.onrender.com/grievance",{
           method:"POST",
           headers:{
             "Content-Type": "application/json"

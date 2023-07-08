@@ -5,6 +5,8 @@ import { UserContext } from '../App';
 import phone from '../images/telephone.png';
 import mail from '../images/email.png';
 import address from '../images/address.png';
+import Cookies from 'js-cookie';
+
 
 const Login=()=>{
   const {state,dispatch} = useContext(UserContext);
@@ -33,6 +35,7 @@ const Login=()=>{
      if(res.status===400 || !data){
        window.alert("Invalid Credentials");
      }else{
+      Cookies.set('jwtoken', data.token, { path: '/' });
       dispatch({type:"USER",payload:true})
       window.alert("Login Successful");
       history.push("/");

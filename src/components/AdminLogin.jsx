@@ -35,7 +35,7 @@ const AdminLogin =()=>{
 
         <form method="GET">
         <div className="form-group text-center jumbotron mx-5">
-        
+        <small>the creds are: admin@gmail.com & admin</small>
         <div >
                 <label htmlFor="email">
                 Email ID:
